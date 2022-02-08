@@ -1,1 +1,16 @@
 /* Denna fil skall innehålla din CSS kod */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+    'nv'
+    'mn'
+    'ft';
+    min-height: 100vh;
+    grid-template-rows: 20vh auto 20vh;
+}
