@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 #wrapper {
@@ -25,7 +25,48 @@ nav {
     justify-content: space-around;
     
 }
+#shopping_cart {
+    width: 1.5em;
+}
+#sect1Hem {
+    display: flex;
+    flex-direction: row;
 
+}
+.art1Hem { 
+    position: absolute;
+    display: inline;
+    background-color: transparent;
+    font-size: 3em;
+    font-weight: 800;
+    width: 30vw;
+    height: 50vh;
+    border-radius: 0.5em;
+    line-height: 1em;
+}
+#sameQuality {/* Text till bilden */
+    margin-left: 1em;
+    margin-top: 0.33em;
+}
+#cheaperPrice { /* Text till bilden */
+    color: white;
+    margin-left: 1em;
+}
+#art2Hem { /* Bilden */
+    position: absolute;
+    margin-top: 8em;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100vw;
+    height: 25vh;
+    z-index: -1;
+    display: inline;
+    background-color: #bfbfbf50;
+    background-image: url(../img/paul-cuoco-CO2vOhPqlrM-unsplash.jpg);
+    background-size: cover;
+    background-position-y: -2em;
+    background-position-x: 3em;
+}
 main {
     grid-area: mn;
 }
