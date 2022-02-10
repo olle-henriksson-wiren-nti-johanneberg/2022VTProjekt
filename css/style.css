@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
 }
 /* För burger Menu */
 .navLinks {
@@ -61,7 +61,7 @@
     'mn'
     'ft';
     min-height: 100vh;
-    grid-template-rows: 10vh auto 20vh;
+    grid-template-rows: 10vh auto 15vh;
     grid-template-columns: auto;
 }
 nav {
@@ -132,5 +132,19 @@ main {
     flex-direction: column;
 }
 footer {
+    display: box;
     grid-area: ft;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+footer li {
+    list-style-type: none;
+}
+#sect1Footer {
+    background-color: #2c2c2c;
+}
+#sect2Footer {
+    background-color: #0d0d0d;
+    height: 7.5vh
 }
