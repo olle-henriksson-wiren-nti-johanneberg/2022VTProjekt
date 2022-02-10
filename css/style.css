@@ -5,6 +5,54 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+/* För burger Menu */
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: -90vh;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    width: 20%; 
+    transition: all 1s;
+    
+}
+.navLinks li {
+    list-style: none;
+}
+.navLinks a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 9%;
+    transition: 0.3s;
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.navActive {
+    transition: all 1s;
+    transform: translateY(100vh);
+}
+/* /// Burger Meny end */
+
 
 #wrapper {
     display: grid;
@@ -14,6 +62,7 @@
     'ft';
     min-height: 100vh;
     grid-template-rows: 10vh auto 20vh;
+    grid-template-columns: auto;
 }
 nav {
     background-color: #0D0D0D;
@@ -22,13 +71,14 @@ nav {
     align-items: center;
     flex-direction: row;
     grid-area: nv;
-    justify-content: space-around;
+    justify-content:space-evenly;
     
 }
 #shopping_cart {
-    width: 1.5em;
+width: 1.5em;
 }
 #sect1Hem {
+    grid-area: sect1;
     display: flex;
     flex-direction: row;
 
@@ -41,7 +91,6 @@ nav {
     font-weight: 800;
     width: 30vw;
     height: 50vh;
-    border-radius: 0.5em;
     line-height: 1em;
 }
 #sameQuality {/* Text till bilden */
@@ -53,7 +102,6 @@ nav {
     margin-left: 1em;
 }
 #art2Hem { /* Bilden */
-    position: absolute;
     margin-top: 8em;
     margin-left: 0;
     padding-left: 0;
@@ -67,8 +115,21 @@ nav {
     background-position-y: -2em;
     background-position-x: 3em;
 }
+#triangleBreak {
+  width: 100vw;
+}
 main {
     grid-area: mn;
+    display: grid;
+    grid-template-areas: 
+    'sect1'
+    'sect2';
+    grid-template-rows: 1fr 0.8fr;
+}
+#sect2Hem {
+    grid-area: sect2;
+    display: flex;
+    flex-direction: column;
 }
 footer {
     grid-area: ft;
