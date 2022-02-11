@@ -14,9 +14,10 @@
     right: 0px;
     height: 90vh;
     top: -90vh;
-    background-color: rgb(255, 255, 255);
+    background-color: #000000a9;
     align-items: center;
-    width: 20%; 
+    text-align: center;
+    width: 40%; 
     transition: all 1s;
     
 }
@@ -24,7 +25,7 @@
     list-style: none;
 }
 .navLinks a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -131,6 +132,9 @@ main {
     display: flex;
     flex-direction: column;
 }
+#art1_2Hem h3 {
+    text-align: center;
+}
 footer {
     display: box;
     grid-area: ft;
@@ -143,8 +147,9 @@ footer li {
 }
 #sect1Footer {
     background-color: #2c2c2c;
+    height: 50%;
 }
 #sect2Footer {
     background-color: #0d0d0d;
-    height: 7.5vh
+    height: 50%;
 }
