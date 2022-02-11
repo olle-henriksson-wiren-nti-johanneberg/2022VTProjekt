@@ -49,7 +49,7 @@
     transform: rotate(45deg) translate(-5px, -6px);
 }
 .navActive {
-    transition: all 1s;
+    transition: all 2s cubic-bezier(.7,-0.01,.27,1.01);
     transform: translateY(100vh);
 }
 /* /// Burger Meny end */
@@ -131,10 +131,61 @@ main {
     grid-area: sect2;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 #art1_2Hem h3 {
     text-align: center;
 }
+.previewCycle:hover {
+    width: 90vw;
+    -webkit-transition: width 1s ease;
+}
+.previewCycle {
+    background-color: gray;
+    width: 70vw;
+    height: 20vh;
+    background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg);
+    border-bottom: 7px solid #0d0d0d;
+    border-radius: 0px 40px 0px 40px;
+    background-size: cover;
+    background-position-y: -5em;
+    animation-name: imageCycle;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    -webkit-transition: width 1s ease;
+    opacity: 100%;
+}
+
+@keyframes imageCycle { /* Image cycle for else*/
+    0% {
+        background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg);
+        border-bottom: 7px solid #0d0d0d;
+        -moz-transition: background-image 2s ease-in;
+
+
+    }
+
+    25% {
+        background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_red.jpg);
+        border-bottom: 7px solid #ff6666;
+        -moz-transition: background-image 2s ease-in;
+
+
+    }
+    50% {
+        background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg);
+        border-bottom: 7px solid #646464;
+        -moz-transition: background-image 2s ease-in;
+
+    }
+    75% {
+        background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_blue.jpg);
+        border-bottom: 7px solid #6bc9ff;
+        -moz-transition: background-image 2s ease-in;
+
+    }
+}
+
 footer {
     display: box;
     grid-area: ft;
