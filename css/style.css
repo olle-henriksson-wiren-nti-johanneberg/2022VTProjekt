@@ -138,7 +138,10 @@ main {
 }
 .previewCycle:hover {
     width: 90vw;
-    -webkit-transition: width 1s ease;
+    transition: width 1s ease;
+}.previewCycle:active {
+    width: 90vw;
+    transition: width 1s ease;
 }
 .previewCycle {
     background-color: gray;
@@ -152,7 +155,7 @@ main {
     animation-name: imageCycle;
     animation-duration: 20s;
     animation-iteration-count: infinite;
-    -webkit-transition: width 1s ease;
+    transition: width 1s ease;
     opacity: 100%;
 }
 
