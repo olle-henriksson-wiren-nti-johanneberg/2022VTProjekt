@@ -26,11 +26,38 @@
 }
 .navLinks a {
     color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 3px;
     font-weight: bold;
     font-size: 20px;
+    letter-spacing: 4px;
+    width: 100%;
+    line-height: 0.3em;
+    
 }
+.linkUnderline {
+    transition: all ease 0.3s;
+    position: absolute;
+    opacity: 0;
+    bottom: -10px;
+    left: 0;
+}
+
+.navLinks a:hover { /* When hovering */
+    color: #585859;   
+}
+.navLinks a:hover .linkUnderline {
+    position: absolute;
+    z-index: -1;
+    border-top: 30px solid white;
+    opacity: 1;
+
+}
+
+
+
 .burger div {
     width: 25px;
     height: 3px;
@@ -54,7 +81,38 @@
 }
 /* /// Burger Meny end */
 
+/*    Keyframes Start   */
+@keyframes imageCycle { /* Image cycle for else*/
+    0% {
+        background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg);
+        border-bottom: 7px solid #0d0d0d;
+        -moz-transition: background-image 2s ease-in;
 
+
+    }
+
+    25% {
+        background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_red.jpg);
+        border-bottom: 7px solid #ff6666;
+        -moz-transition: background-image 2s ease-in;
+
+
+    }
+    50% {
+        background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg);
+        border-bottom: 7px solid #646464;
+        -moz-transition: background-image 2s ease-in;
+
+    }
+    75% {
+        background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_blue.jpg);
+        border-bottom: 7px solid #6bc9ff;
+        -moz-transition: background-image 2s ease-in;
+
+    }
+}
+
+/* /// KEYFRAMES END /// */
 #wrapper {
     display: grid;
     grid-template-areas: 
@@ -139,7 +197,7 @@ main {
 .previewCycle:hover {
     width: 90vw;
     transition: width 1s ease;
-}.previewCycle:active {
+}.previewCycle:active { /* For mobile */
     width: 90vw;
     transition: width 1s ease;
 }
@@ -159,35 +217,7 @@ main {
     opacity: 100%;
 }
 
-@keyframes imageCycle { /* Image cycle for else*/
-    0% {
-        background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg);
-        border-bottom: 7px solid #0d0d0d;
-        -moz-transition: background-image 2s ease-in;
 
-
-    }
-
-    25% {
-        background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_red.jpg);
-        border-bottom: 7px solid #ff6666;
-        -moz-transition: background-image 2s ease-in;
-
-
-    }
-    50% {
-        background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg);
-        border-bottom: 7px solid #646464;
-        -moz-transition: background-image 2s ease-in;
-
-    }
-    75% {
-        background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_blue.jpg);
-        border-bottom: 7px solid #6bc9ff;
-        -moz-transition: background-image 2s ease-in;
-
-    }
-}
 
 footer {
     display: box;
