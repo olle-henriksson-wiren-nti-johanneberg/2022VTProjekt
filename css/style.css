@@ -86,7 +86,6 @@
     0% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg);
         border-bottom: 7px solid #0d0d0d;
-        -moz-transition: background-image 2s ease-in;
 
 
     }
@@ -94,21 +93,17 @@
     25% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_red.jpg);
         border-bottom: 7px solid #ff6666;
-        -moz-transition: background-image 2s ease-in;
 
 
     }
     50% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg);
         border-bottom: 7px solid #646464;
-        -moz-transition: background-image 2s ease-in;
 
     }
     75% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_blue.jpg);
         border-bottom: 7px solid #6bc9ff;
-        -moz-transition: background-image 2s ease-in;
-
     }
 }
 
