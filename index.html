@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Watchstore</title> <!-- Ska ändras! -->
+    <title>Morar Watches</title> <!-- Ska ändras! -->
     <link rel="stylesheet" href="./css/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Noto+Sans&family=Raleway:wght@300&family=Roboto+Slab:wght@300&display=swap');
     </style> <!-- Noto Sans(sans-serif), Raleway(sans-serif), Roboto Slab(serif), Montserrat(sans-serif) -->
+    <link rel="icon" href="/img/logo.svg">
 </head>
 <body>
 
@@ -16,7 +17,9 @@
         <nav>
             
             <section><img id="shopping_cart" src="./img/shopping_cart_white.svg"></section>
-            <section>logo</section>
+
+            <section><img class="logo" src="./img/logo.svg"></section>
+            
             <section> 
                 <div class="burger">
                     <div class="line1"></div>
@@ -24,14 +27,26 @@
                     <div class="line3"></div>
                 </div>
                 <ul class="navLinks">
+                    
+                    <li><a href="#">watches
+                        <svg class="linkUnderline" width="130" height="2">
+                            <rect width="400" height="100" 
+                            style="fill:rgb(255, 255, 255)"></rect></svg>
+                    </a></li>
+
                     <li class="ourStores"><a href="#">stores
                         <svg class="linkUnderline" width="100" height="2">
                             <rect width="400" height="100" 
                             style="fill:rgb(255, 255, 255)"></rect></svg>
                     </a></li>
-                    <li><a href="#">!!!</a></li>
-                    <li><a href="#">...</a></li>
+
+                    <li><a href="#">FAQ<svg class="linkUnderline" width="50" height="2">
+                        <rect width="400" height="100" 
+                        style="fill:rgb(255, 255, 255)"></rect></svg>
+                    </a></li>
+
                     <li><a href="#">,,,</a></li>
+
                 </ul>
         
                
@@ -41,18 +56,24 @@
         <main>
 
             <section id="sect1Hem">
-                <article class="art1Hem"><p id="sameQuality">Same quality</p> <br> <p id="cheaperPrice">Cheaper price.</p></article>
+                <article class="art1Hem"><p id="sameQuality">Same quality,</p> <br> <p id="cheaperPrice">Cheaper price.</p></article>
                 <article id="art2Hem">art2</article>           
                 
 
             </section>
 
 
-            <section id="sect2Hem">  
+            <section class="sect2Hem">  
                 <article id="art1_2Hem">
                     <h3>Most Recent Release.</h3>
                 </article>
                 <a href="#"><article class="previewCycle"></article></a>
+
+                <div class="theName"><h4>The Vi</h4></div>
+
+                <a href="#"><article class="previewCycle2"></article></a>
+
+                <div class="theName"><h4>Schnible Edition</h4></div>
             </section> 
 
         </main>

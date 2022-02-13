@@ -60,7 +60,7 @@
 
 .burger div {
     width: 25px;
-    height: 3px;
+    height:  3px;
     background-color: rgb(255, 255, 255);
     margin: 5px;
     border-radius: 9%;
@@ -82,7 +82,7 @@
 /* /// Burger Meny end */
 
 /*    Keyframes Start   */
-@keyframes imageCycle { /* Image cycle for else*/
+@keyframes imageCycle { /* Image cycle for The Vi watch */
     0% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg);
         border-bottom: 7px solid #0d0d0d;
@@ -107,6 +107,17 @@
     }
 }
 
+@keyframes imageCycle2 { /* Image cycle for the ... watch*/
+    0% {
+        background-image: url(../img/haziq-jb-71_GA1KBf_8-unsplash_marine.jpg);
+    }
+    33% {
+        background-image: url(../img/haziq-jb-71_GA1KBf_8-unsplash_purple.jpg);
+    }
+    66% {
+        background-image: url(../img/haziq-jb-71_GA1KBf_8-unsplash_emerald.jpg);
+    }
+}
 /* /// KEYFRAMES END /// */
 #wrapper {
     display: grid;
@@ -128,8 +139,12 @@ nav {
     justify-content:space-evenly;
     
 }
-#shopping_cart {
-width: 1.5em;
+#shopping_cart {/* img av shopping cart */
+width: 8vw;
+
+}
+.logo { /* img off logo*/
+  width: 15vw;  
 }
 #sect1Hem {
     grid-area: sect1;
@@ -180,20 +195,27 @@ main {
     'sect2';
     grid-template-rows: 1fr 0.8fr;
 }
-#sect2Hem {
+.sect2Hem {
     grid-area: sect2;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.sect2Hem p {
+    font-weight: bold;
+}
 #art1_2Hem h3 {
     text-align: center;
 }
-.previewCycle:hover {
+.previewCycle:hover { /* Ökar storleken med hover */
     width: 90vw;
     transition: width 1s ease;
 }.previewCycle:active { /* For mobile */
     width: 90vw;
+    transition: width 1s ease;
+}
+.previewCycle2:hover, .previewCycle2:active {
+    width: 100vw;
     transition: width 1s ease;
 }
 .previewCycle {
@@ -211,7 +233,23 @@ main {
     transition: width 1s ease;
     opacity: 100%;
 }
-
+.theName {
+    margin-bottom: 1em;
+}
+.previewCycle2 {
+    background-color: gray;
+    width: 90vw;
+    height: 15vh;
+    background-image: url(../img/haziq-jb-71_GA1KBf_8-unsplash_marine.jpg);
+    background-size: cover;
+    background-position-y: -3em;
+    border-radius: 15px 0px 0px 0px;
+    animation-name: imageCycle2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: width 1s ease;
+    opacity: 100%;
+}
 
 
 footer {
