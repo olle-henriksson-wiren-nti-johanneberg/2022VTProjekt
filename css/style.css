@@ -86,15 +86,11 @@
     0% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg);
         border-bottom: 7px solid #0d0d0d;
-
-
     }
 
     25% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_red.jpg);
         border-bottom: 7px solid #ff6666;
-
-
     }
     50% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg);
@@ -140,11 +136,11 @@ nav {
     
 }
 #shopping_cart {/* img av shopping cart */
-width: 8vw;
+    width: 8vw;
 
 }
 .logo { /* img off logo*/
-  width: 15vw;  
+    width: 15vw;  
 }
 #sect1Hem {
     grid-area: sect1;
@@ -253,20 +249,22 @@ main {
 
 
 footer {
-    display: box;
     grid-area: ft;
     color: white;
+}
+#sect1Footer  {   
+    height: 70%;   
+    background-color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
-footer li {
+#sect1Footer ul {
     list-style-type: none;
-}
-#sect1Footer {
-    background-color: #2c2c2c;
-    height: 50%;
 }
 #sect2Footer {
     background-color: #0d0d0d;
-    height: 50%;
+    height: 30%;
 }
