@@ -68,16 +68,20 @@
 }
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: #585859;
 }
 .toggle .line2 {
     opacity: 0;
 }
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+    background-color: #585859;
 }
 .navActive {
     transition: all 2s cubic-bezier(.7,-0.01,.27,1.01);
     transform: translateY(100vh);
+    position: fixed;
+    bottom: 0;
 }
 /* /// Burger Meny end */
 
@@ -128,6 +132,11 @@
 nav {
     background-color: #0D0D0D;
     color: white;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 10%;
     display: flex;
     align-items: center;
     flex-direction: row;
