@@ -119,6 +119,9 @@
     }
 }
 /* /// KEYFRAMES END /// */
+
+
+
 #wrapper {
     display: grid;
     grid-template-areas: 
@@ -205,6 +208,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .sect2Hem p {
     font-weight: bold;
@@ -212,17 +216,15 @@ main {
 #art1_2Hem h3 {
     text-align: center;
 }
-.previewCycle:hover { /* Ökar storleken med hover */
-    width: 90vw;
-    transition: width 1s ease;
-}.previewCycle:active { /* For mobile */
-    width: 90vw;
-    transition: width 1s ease;
+#art1_2Hem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.previewCycle2:hover, .previewCycle2:active {
-    width: 100vw;
-    transition: width 1s ease;
-}
+
+
 .previewCycle {
     background-color: gray;
     width: 70vw;
@@ -276,4 +278,64 @@ footer {
 #sect2Footer {
     background-color: #0d0d0d;
     height: 30%;
+}
+
+
+
+/* ////////MEDIA QUERIES///// */
+@media screen and (min-width: 480px) {
+    .logo {
+        width: 100px;
+    }
+    #shopping_cart {
+        width:40px;
+    }
+    nav {
+        align-items: center;
+    }
+    .navLinks {
+        flex-direction: row;
+        position:static;
+        gap: 4em;
+        padding-bottom: 24px;
+        background-color: transparent;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .navActive {
+        transition: all 2s cubic-bezier(.7,-0.01,.27,1.01);
+    }
+    .previewCycle {
+        grid-area: pc1;
+        width: 30vw;
+        height: 20vw;
+        transition: all ease 1s;
+    }
+    .previewCycle2 {
+        grid-area: pc2;
+        width: 30vw;
+        height: 20vw;
+        transition: all ease 1s;
+    }
+    .previewCycle:hover, .previewCycle2:hover {
+        width: 35vw;
+        height: 22vw;
+        transition: all ease 1s;
+    }
+    .theName1 {
+        grid-area: thn1;
+    }
+    .theName2 {
+        grid-area: thn2;
+    }
+    #art1_2Hem {
+        display: grid;
+        grid-template-areas: 
+        'pc1 pc2'
+        'thn1 thn2';
+        column-gap: 5em;
+        margin-bottom: 6em;
+    }
 }
