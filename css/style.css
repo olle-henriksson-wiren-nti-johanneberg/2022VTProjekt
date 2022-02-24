@@ -89,21 +89,21 @@
 @keyframes imageCycle { /* Image cycle for The Vi watch */
     0% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg);
-        border-bottom: 7px solid #0d0d0d;
+        border-bottom: 0.5em solid #0d0d0d;
     }
 
     25% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_red.jpg);
-        border-bottom: 7px solid #ff6666;
+        border-bottom: 0.5em solid #ff6666;
     }
     50% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg);
-        border-bottom: 7px solid #646464;
+        border-bottom: 0.5em solid #646464;
 
     }
     75% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_blue.jpg);
-        border-bottom: 7px solid #6bc9ff;
+        border-bottom: 0.5em solid #6bc9ff;
     }
 }
 
@@ -164,11 +164,11 @@ nav {
     position: absolute;
     display: inline;
     background-color: transparent;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 800;
     width: 30vw;
     height: 50vh;
-    line-height: 1em;
+    line-height: 1.3em;
 }
 #sameQuality {/* Text till bilden */
     margin-left: 1em;
@@ -284,6 +284,16 @@ footer {
 
 /* ////////MEDIA QUERIES///// */
 @media screen and (min-width: 480px) {
+    .art1Hem {
+        font-size: 3em;
+    }
+    #art2Hem {
+        height: 30vh;
+        background-position-y: -60vh;
+        background-position-x: 0vw;
+        background-size: 100%;
+        filter: blur(0.15em);
+    }
     .logo {
         width: 100px;
     }
@@ -318,6 +328,8 @@ footer {
         width: 30vw;
         height: 20vw;
         transition: all ease 1s;
+        background-position-y: 0em;
+
     }
     .previewCycle:hover, .previewCycle2:hover {
         width: 35vw;
