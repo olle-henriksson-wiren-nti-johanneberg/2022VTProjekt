@@ -213,7 +213,7 @@ main {
 .sect2Hem p {
     font-weight: bold;
 }
-#art1_2Hem h3 {
+#art1_2Hem h2 {
     text-align: center;
 }
 #art1_2Hem {
@@ -256,6 +256,38 @@ main {
     animation-iteration-count: infinite;
     transition: width 1s ease;
     opacity: 100%;
+}
+.sect3Hem {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2em;
+}
+.sect3Hem h3 {
+    font-weight: bold;
+}
+#art2_3Hem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#art2_3Hem a{
+    text-decoration: none;
+    color: #585859;
+}
+#art2_3Hem a:hover{
+    color: white;
+}
+#ecoFriendly {
+    background-color: gray;
+    background-image: url(../img/goutham-krishna-h5wvMCdOV3w-unsplash.jpg);
+    width: 80vw;
+    height: 30vh;
+    background-position-x: -10em;
+    background-position-y: -20em;
+    margin-bottom: 1em;
 }
 
 
