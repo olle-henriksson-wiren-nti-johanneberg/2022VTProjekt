@@ -315,11 +315,17 @@ footer {
 
 
 /* ////////MEDIA QUERIES///// */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) { /* För Desktop */
+    #sameQuality {
+
+    }
     .art1Hem {
         font-size: 3em;
+        line-height: 1.5em;
+        width: 80vw;
     }
     #art2Hem {
+        margin-top: 10em;
         height: 30vh;
         background-position-y: -60vh;
         background-position-x: 0vw;
@@ -338,12 +344,14 @@ footer {
     .navLinks {
         flex-direction: row;
         position:static;
-        gap: 4em;
         padding-bottom: 24px;
         background-color: transparent;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
 
+    }
+    .navLinks li {
+        padding-right: 2em;
     }
 
     .navActive {
