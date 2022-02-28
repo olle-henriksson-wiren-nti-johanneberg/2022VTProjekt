@@ -322,8 +322,47 @@ footer a:hover {
     background-color: #0d0d0d;
     height: 30%;
 }
-
-
+.sect1Product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productImg {
+    width: 70vw;
+    height: 35vh;
+    background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg);
+    background-size: cover;
+    background-position-y: -2em;
+    margin-bottom: 1em;
+}
+#colorButtons {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.blackB {
+    border: 1em outset gray;
+    outline: black solid 3px;
+    border-radius: 100%;
+}
+.whiteB {
+    border: 1em outset white;
+    outline: black 3px solid;
+    border-radius: 100%;
+}
+.redB {
+    border: 1em outset red;
+    outline: 3px solid black;
+    border-radius: 100%;
+}
+.blueB {
+    border: 1em outset blue;
+    outline: 3px solid black;
+    border-radius: 100%;
+}
 
 /* ////////MEDIA QUERIES///// */
 @media screen and (min-width: 480px) { /* För Desktop */
@@ -409,7 +448,7 @@ footer a:hover {
     #ecoFriendly { /* Bilden */
         grid-area: ecof;
         width: 25vw;
-        height: 65vh;
+        height: 50vh;
         background-position-y: -5em;
     }
     #ecoP {
