@@ -18,7 +18,6 @@
     align-items: center;
     text-align: center;
     width: 40%; 
-    transition: all 1s;
     
 }
 .navLinks li {
@@ -38,17 +37,18 @@
     
 }
 .linkUnderline {
-    transition: all ease 0.3s;
+    transition: all ease 1s;
     position: absolute;
     opacity: 0;
     bottom: -10px;
     left: 0;
+    border-top: 0px solid white;
 }
-
 .navLinks a:hover { /* When hovering */
     color: #585859;   
 }
 .navLinks a:hover .linkUnderline {
+    transition: all ease 0.33s;
     position: absolute;
     z-index: -1;
     border-top: 30px solid white;
