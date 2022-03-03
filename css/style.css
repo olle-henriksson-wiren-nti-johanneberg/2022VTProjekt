@@ -333,6 +333,7 @@ footer a:hover {
     background-size: cover;
     background-position-y: -2em;
     margin-bottom: 1em;
+    transition: all ease 1s;
 }
 #colorButtons {
     width: 80vw;
@@ -345,21 +346,24 @@ footer a:hover {
     padding-bottom: 1em;
     border-radius: 1em;
 }
-.blackB {
-    border: 0.7em outset #585859;
+#blackB {
     border-radius: 100%;
+    transition: all ease 0.3s;
 }
-.whiteB {
-    border: 0.7em outset #F2F2F2;
+#whiteB {
     border-radius: 100%;
+    transition: all ease 0.3s;
+
 }
-.redB {
-    border: 0.7em outset red;
+#redB {
     border-radius: 100%;
+    transition: all ease 0.3s;
+
 }
-.blueB {
-    border: 0.7em outset blue;
+#blueB {
     border-radius: 100%;
+    transition: all ease 0.3s;
+
 }
 
 /* ////////MEDIA QUERIES///// */
