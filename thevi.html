@@ -59,12 +59,36 @@
         <main>
             <section class="sect1Product">
                 <h2 id="productH">The VI</h2>
-                <div class="productImg">backimg</div>
+                <img id="productImg" src="/img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg"></img>
                 <div id="colorButtons">
-                    <div class="blackB"></div>
-                    <div class="whiteB"></div>
-                    <div class="blueB"></div>
-                    <div class="redB"></div>
+                    <div class="blackB" onclick="toggleBlack()"></div>
+                        <script>
+                        function toggleBlack() {
+                          document.getElementById("productImg").src = "/img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg";}
+                        </script>
+
+                    <div class="whiteB" onclick="toggleWhite()"></div>
+                        <script>
+                        function toggleWhite() {
+                          document.getElementById("productImg").src = "/img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg";}
+                        </script>
+
+                    <div class="blueB" onclick="toggleBlue()"></div>
+                        <script>
+                        function toggleBlue() {
+                          document.getElementById("productImg").src = "/img/rick-muigo-SX9IouL_qOg-unsplash_blue.jpg";}
+                        </script>
+
+                    <div class="redB" onclick="toggleRed()"></div>
+                        <script>
+                        function toggleRed() {
+                          document.getElementById("productImg").src = "/img/rick-muigo-SX9IouL_qOg-unsplash_red.jpg";
+                          document.getElementById("toggleRed").style.bordercolor = "gold";
+
+                        }
+
+                        </script>
+
 
                 </div>
                 

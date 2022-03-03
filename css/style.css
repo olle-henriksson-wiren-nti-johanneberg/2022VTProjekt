@@ -328,10 +328,8 @@ footer a:hover {
     justify-content: center;
     align-items: center;
 }
-.productImg {
+#productImg {
     width: 70vw;
-    height: 35vh;
-    background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg);
     background-size: cover;
     background-position-y: -2em;
     margin-bottom: 1em;
@@ -342,25 +340,25 @@ footer a:hover {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
+    background-color: rgba(128, 128, 128, 0.308);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 1em;
 }
 .blackB {
-    border: 1em outset gray;
-    outline: black solid 3px;
+    border: 0.7em outset #585859;
     border-radius: 100%;
 }
 .whiteB {
-    border: 1em outset white;
-    outline: black 3px solid;
+    border: 0.7em outset #F2F2F2;
     border-radius: 100%;
 }
 .redB {
-    border: 1em outset red;
-    outline: 3px solid black;
+    border: 0.7em outset red;
     border-radius: 100%;
 }
 .blueB {
-    border: 1em outset blue;
-    outline: 3px solid black;
+    border: 0.7em outset blue;
     border-radius: 100%;
 }
 
