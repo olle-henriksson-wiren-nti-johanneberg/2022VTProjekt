@@ -26,3 +26,70 @@ const productimage = document.querySelector('.productImg')
 //    productimage.classList.toggle('blueProductImg')
 //}
 //bluebutton.addEventListener('click', toggleBlue)
+
+function toggleBlack() {
+    document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg"
+    document.getElementById("blackB").style.border = "1em inset gold"
+    document.getElementById("redB").style.border = "0.7em outset red"
+    document.getElementById("whiteB").style.border = "0.7em outset #F2F2F2"
+    document.getElementById("blueB").style.border = "0.7em outset blue"
+
+    document.getElementById("blackB").style.transform = "rotate(360deg)"
+    document.getElementById("blueB").style.transform = "rotate(0deg)"
+    document.getElementById("redB").style.transform = "rotate(0deg)"
+    document.getElementById("whiteB").style.transform = "rotate(0deg)"
+
+
+
+    // funkar inte
+}
+function toggleWhite() {
+    document.getElementById("productImg").src ="../img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg"
+    document.getElementById("whiteB").style.border = "1em outset gold"
+    document.getElementById("blueB").style.border = "0.7em outset blue"
+    document.getElementById("blackB").style.border = "0.7em outset #585859"
+    document.getElementById("redB").style.border = "0.7em outset red"
+
+    document.getElementById("whiteB").style.transform = "rotate(360deg)"
+    document.getElementById("blueB").style.transform = "rotate(0deg)"
+    document.getElementById("redB").style.transform = "rotate(0deg)"
+    document.getElementById("blackB").style.transform = "rotate(0deg)"
+
+
+
+    // funkar
+
+}
+function toggleBlue() {
+    document.getElementById("productImg").src ="../img/rick-muigo-SX9IouL_qOg-unsplash_blue.jpg"
+    document.getElementById("blueB").style.border = "1em outset gold"
+    document.getElementById("redB").style.border = "0.7em outset red"
+    document.getElementById("blackB").style.border = "0.7em outset #585859"
+    document.getElementById("whiteB").style.border = "0.7em outset #F2F2F2"
+
+    document.getElementById("blueB").style.transform = "rotate(360deg)"
+    document.getElementById("redB").style.transform = "rotate(0deg)"
+    document.getElementById("whiteB").style.transform = "rotate(0deg)"
+    document.getElementById("blackB").style.transform = "rotate(0deg)"
+
+
+    // funkar
+
+}
+function toggleRed() {
+    document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_red.jpg"
+    document.getElementById("redB").style.border = "1em outset gold "
+    document.getElementById("blueB").style.border = "0.7em outset blue"
+    document.getElementById("blackB").style.border = "0.7em outset #585859"
+    document.getElementById("whiteB").style.border = "0.7em outset #F2F2F2"
+
+    document.getElementById("redB").style.transform = "rotate(360deg)"
+    document.getElementById("blueB").style.transform = "rotate(0deg)"
+    document.getElementById("whiteB").style.transform = "rotate(0deg)"
+    document.getElementById("blackB").style.transform = "rotate(0deg)"
+
+
+
+// funkar
+}
+
