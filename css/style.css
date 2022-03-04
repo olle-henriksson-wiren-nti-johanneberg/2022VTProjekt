@@ -461,5 +461,45 @@ footer a:hover {
     #ecoH {
         grid-area: ecoh;
     }
+
+
+    /* Produkt sida (The VI) */
+    .sect1Product {
+        display: grid;
+        grid-template-areas: 
+        'prodi prodh'
+        'prodi colorbut';
+    }
+    #productH {
+        grid-area: prodh;
+        padding-left: 1em;
+    }
+    #productImg {
+        grid-area: prodi;
+        width: 30vw;
+    }
+    #colorButtons {
+        grid-area: colorbut;
+        border-radius: 100%;
+        width: 20em;
+        height: 20em;
+        display: flex;
+        flex-direction: column;
+        transition: all ease 1s;
+    }
+    #blackB {
+        margin-left: 7em;
+    }
+    #whiteB {
+        margin-bottom: 0.5em;
+        margin-left: 13em;
+    }
+    #blueB {
+        margin-top: 0.5em;
+        margin-left: 13em;
+    }
+    #redB {
+        margin-left: 7em;
+    }
 }
 
