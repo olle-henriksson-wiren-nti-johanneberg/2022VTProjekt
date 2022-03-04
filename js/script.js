@@ -45,7 +45,7 @@ function toggleBlack() {
 }
 function toggleWhite() {
     document.getElementById("productImg").src ="../img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg"
-    document.getElementById("whiteB").style.border = "1em outset gold"
+    document.getElementById("whiteB").style.border = "1em inset gold"
     document.getElementById("blueB").style.border = "0.7em outset blue"
     document.getElementById("blackB").style.border = "0.7em outset #585859"
     document.getElementById("redB").style.border = "0.7em outset red"
@@ -62,7 +62,7 @@ function toggleWhite() {
 }
 function toggleBlue() {
     document.getElementById("productImg").src ="../img/rick-muigo-SX9IouL_qOg-unsplash_blue.jpg"
-    document.getElementById("blueB").style.border = "1em outset gold"
+    document.getElementById("blueB").style.border = "1em inset gold"
     document.getElementById("redB").style.border = "0.7em outset red"
     document.getElementById("blackB").style.border = "0.7em outset #585859"
     document.getElementById("whiteB").style.border = "0.7em outset #F2F2F2"
@@ -78,7 +78,7 @@ function toggleBlue() {
 }
 function toggleRed() {
     document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_red.jpg"
-    document.getElementById("redB").style.border = "1em outset gold "
+    document.getElementById("redB").style.border = "1em inset gold "
     document.getElementById("blueB").style.border = "0.7em outset blue"
     document.getElementById("blackB").style.border = "0.7em outset #585859"
     document.getElementById("whiteB").style.border = "0.7em outset #F2F2F2"
