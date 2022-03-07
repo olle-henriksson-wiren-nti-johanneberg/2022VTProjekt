@@ -28,21 +28,6 @@ const productimage = document.querySelector('.productImg')
 var desktopsize = window.matchMedia("(min-width: 480px)")
 
 function toggleBlack(desktopsize) {
-    if (desktopsize.matches) {
-    document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg"
-    document.getElementById("blackB").style.border = "2em inset gold"
-    document.getElementById("redB").style.border = "1em outset red"
-    document.getElementById("whiteB").style.border = "1em outset #F2F2F2"
-    document.getElementById("blueB").style.border = "1em outset blue"
-
-    document.getElementById("blackB").style.transform = "rotate(360deg)"
-    document.getElementById("blueB").style.transform = "rotate(0deg)"
-    document.getElementById("redB").style.transform = "rotate(0deg)"
-    document.getElementById("whiteB").style.transform = "rotate(0deg)"
-
-    document.getElementById("colorButtons").style.transform = "rotate(360-360deg)"
-        // FÖRSÖKER FÅ SKITEN ATT SNURRA OM OCH OM IGEN MEN FAN VAD SVÅRT DET SKA VARA, HJÄLP MIG!!!!
-    } else
     document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg"
     document.getElementById("blackB").style.border = "1em inset gold"
     document.getElementById("redB").style.border = "0.7em outset red"
@@ -52,11 +37,13 @@ function toggleBlack(desktopsize) {
     document.getElementById("blackB").style.transform = "rotate(360deg)"
     document.getElementById("blueB").style.transform = "rotate(0deg)"
     document.getElementById("redB").style.transform = "rotate(0deg)"
+    document.getElementById("whiteB").style.transform = "rotate(0deg)"
+
     }
 
 
     // funkar inte
-function toggleWhite() {
+function toggleWhite(desktopsize) {
     document.getElementById("productImg").src ="../img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg"
     document.getElementById("whiteB").style.border = "1em inset gold"
     document.getElementById("blueB").style.border = "0.7em outset blue"
@@ -73,7 +60,7 @@ function toggleWhite() {
     // funkar
 
 }
-function toggleBlue() {
+function toggleBlue(desktopsize) {
     document.getElementById("productImg").src ="../img/rick-muigo-SX9IouL_qOg-unsplash_blue.jpg"
     document.getElementById("blueB").style.border = "1em inset gold"
     document.getElementById("redB").style.border = "0.7em outset red"
@@ -89,7 +76,7 @@ function toggleBlue() {
     // funkar
 
 }
-function toggleRed() {
+function toggleRed(desktopsize) {
     document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_red.jpg"
     document.getElementById("redB").style.border = "1em inset gold "
     document.getElementById("blueB").style.border = "0.7em outset blue"

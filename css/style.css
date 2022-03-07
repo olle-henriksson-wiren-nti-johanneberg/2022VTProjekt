@@ -334,7 +334,7 @@ footer a:hover {
 .sect1Product {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 #productImg {
@@ -346,13 +346,12 @@ footer a:hover {
 }
 #colorButtons {
     width: 80vw;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgba(128, 128, 128, 0.308);
-    padding-top: 1em;
-    padding-bottom: 1em;
     border-radius: 1em;
 }
 #blackB, #blueB, #whiteB, #redB {
@@ -483,23 +482,10 @@ footer a:hover {
         border-radius: 100%;
         width: 20em;
         height: 20em;
-        display: flex;
+        
         flex-direction: column;
         transition: all ease 1s;
     }
-    #blackB {
-        margin-left: 7em;
-    }
-    #whiteB {
-        margin-bottom: 0.5em;
-        margin-left: 13em;
-    }
-    #blueB {
-        margin-top: 0.5em;
-        margin-left: 13em;
-    }
-    #redB {
-        margin-left: 7em;
-    }
+    
 }
 
