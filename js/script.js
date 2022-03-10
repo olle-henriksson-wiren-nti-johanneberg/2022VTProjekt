@@ -29,7 +29,13 @@ var desktopsize = window.matchMedia("(min-width: 480px)")
 
 function toggleBlack(desktopsize) {
     document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg"
-    document.getElementById("blackB").style.border = "1em inset gold"
+
+    document.getElementById("blackB").style.boxShadow = "0 0 0 3px white"    
+    document.getElementById("blackB").style.border = "1em outset #585859"
+    document.getElementById("whiteB").style.boxShadow = "none"
+    document.getElementById("redB").style.boxShadow = "none"
+    document.getElementById("blueB").style.boxShadow = "none"
+
     document.getElementById("redB").style.border = "0.7em outset red"
     document.getElementById("whiteB").style.border = "0.7em outset #F2F2F2"
     document.getElementById("blueB").style.border = "0.7em outset blue"
@@ -45,7 +51,13 @@ function toggleBlack(desktopsize) {
     // funkar inte
 function toggleWhite(desktopsize) {
     document.getElementById("productImg").src ="../img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg"
-    document.getElementById("whiteB").style.border = "1em inset gold"
+
+    document.getElementById("whiteB").style.boxShadow = "0 0 0 3px black"    
+    document.getElementById("whiteB").style.border = "1em outset white"
+    document.getElementById("blackB").style.boxShadow = "none"
+    document.getElementById("redB").style.boxShadow = "none"
+    document.getElementById("blueB").style.boxShadow = "none"
+
     document.getElementById("blueB").style.border = "0.7em outset blue"
     document.getElementById("blackB").style.border = "0.7em outset #585859"
     document.getElementById("redB").style.border = "0.7em outset red"
@@ -62,7 +74,13 @@ function toggleWhite(desktopsize) {
 }
 function toggleBlue(desktopsize) {
     document.getElementById("productImg").src ="../img/rick-muigo-SX9IouL_qOg-unsplash_blue.jpg"
-    document.getElementById("blueB").style.border = "1em inset gold"
+
+    document.getElementById("blueB").style.boxShadow = "0 0 0 3px white"
+    document.getElementById("blueB").style.border = "1em outset blue"
+    document.getElementById("whiteB").style.boxShadow = "none"
+    document.getElementById("redB").style.boxShadow = "none"
+    document.getElementById("blackB").style.boxShadow = "none"
+
     document.getElementById("redB").style.border = "0.7em outset red"
     document.getElementById("blackB").style.border = "0.7em outset #585859"
     document.getElementById("whiteB").style.border = "0.7em outset #F2F2F2"
@@ -78,7 +96,13 @@ function toggleBlue(desktopsize) {
 }
 function toggleRed(desktopsize) {
     document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_red.jpg"
-    document.getElementById("redB").style.border = "1em inset gold "
+
+    document.getElementById("redB").style.boxShadow = "0 0 0 3px black"
+    document.getElementById("redB").style.border = "1em outset red"
+    document.getElementById("whiteB").style.boxShadow = "none"
+    document.getElementById("blackB").style.boxShadow = "none"
+    document.getElementById("blueB").style.boxShadow = "none"
+
     document.getElementById("blueB").style.border = "0.7em outset blue"
     document.getElementById("blackB").style.border = "0.7em outset #585859"
     document.getElementById("whiteB").style.border = "0.7em outset #F2F2F2"

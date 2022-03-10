@@ -366,8 +366,14 @@ footer a:hover {
     animation-name: buttonTransition;
     animation-duration: 1s;
     transition: all ease 0.3s;
+    transform: translateZ(0)
+}
+#mainProduct {
+    display: flex;
+    justify-content: center;
 }
 .productP {
+    grid-area: prodp;
     display: flex;
     justify-content: center;
     background-color: #585859;
@@ -506,7 +512,8 @@ footer a:hover {
         display: grid;
         grid-template-areas: 
         'prodi prodh'
-        'prodi colorbut';
+        'prodi colorbut'
+        'prodp prodp';
     }
     #productH {
         grid-area: prodh;
@@ -521,8 +528,6 @@ footer a:hover {
         border-radius: 100%;
         width: 20em;
         height: 20em;
-        
-        flex-direction: column;
         transition: all ease 1s;
     }
     
