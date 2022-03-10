@@ -368,10 +368,6 @@ footer a:hover {
     transition: all ease 0.3s;
     transform: translateZ(0)
 }
-#mainProduct {
-    display: flex;
-    justify-content: center;
-}
 .productP {
     grid-area: prodp;
     display: flex;
@@ -388,7 +384,6 @@ footer a:hover {
     border: none;
     width: 100%;
     height: 1px;
-    display: block;
 }
 #productText {
     padding-top: 1em;
@@ -431,6 +426,7 @@ footer a:hover {
     }
     nav {
         align-items: center;
+        outline: #0D0D0D solid;
     }
     .navLinks {
         flex-direction: row;
@@ -509,15 +505,34 @@ footer a:hover {
 
     /* Produkt sida (The VI) */
     .sect1Product {
-        display: grid;
-        grid-template-areas: 
-        'prodi prodh'
-        'prodi colorbut'
-        'prodp prodp';
+        display: flex;
+        flex-direction: row;
+        align-items: unset; 
+        justify-content: space-between;
+        column-gap: 6em;
+        width: 100vw;
+        height: auto;
+
+    }
+    #productText {
+        width: auto;
+        word-wrap: break-word;
+    }
+    #productText hr {
+        width: 15vw;
+    }
+    .productP {
+        padding-left: 1em;
+        justify-content: flex-start;
+        grid-area: prodp;
+        min-height: 100%;
+        width: 20vw;
     }
     #productH {
-        grid-area: prodh;
-        padding-left: 1em;
+        visibility: hidden;
+        position: absolute;
+        z-index: -9;
+        left: 0;
     }
     #productImg {
         grid-area: prodi;
@@ -526,9 +541,22 @@ footer a:hover {
     #colorButtons {
         grid-area: colorbut;
         border-radius: 100%;
-        width: 20em;
-        height: 20em;
+        width: 15em;
+        height: 15em;
         transition: all ease 1s;
+        flex-direction: column;
+    }
+    #blackB {
+        margin-left: 4em;
+    }
+    #whiteB {
+        margin-left: 8em;
+    }
+    #blueB {
+        margin-left: 8em;
+    }
+    #redB {
+        margin-left: 4em;
     }
     
 }
