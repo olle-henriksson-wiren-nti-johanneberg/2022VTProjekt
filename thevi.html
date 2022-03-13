@@ -58,20 +58,7 @@
         </nav> 
 
         <main id="mainProduct">
-            <section class="sect1Product">
-                <h2 id="productH">The VI</h2>
-            <div class="imgBox">
-                <img id="productImg" src="/img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg" alt="The wristwatch">
-                <div id="colorButtons" style="transform: rotate(0deg);">
-                    <div id="blackB" onclick="toggleBlack(desktopsize)" style="box-shadow: 0 0 0 black;"></div>
-                        
-                    <div id="whiteB" onclick="toggleWhite(desktopsize)" style="box-shadow: 0 0 0px 3px black;"></div>
-
-                    <div id="blueB" onclick="toggleBlue(desktopsize)" style="box-shadow: 0 0 0 black;"></div>
-
-                    <div id="redB" onclick="toggleRed(desktopsize)" style="box-shadow: 0 0 0 black;"></div>
-                </div>
-            </div>
+            
                 
 
                 <div class="productP">
@@ -85,13 +72,35 @@
                     <h5>Specifications</h5>
                     <p>width: X mm</p>
                     <p>weight: X grams</p>
-                    
+                    <button class="addtocartDesktop">Add to Cart <img id="addtocartImg" src="./img/shopping_cart.svg" alt="add to cart icon"></button>
                     </div>
 
                     
                     
+                </div>    
+            <div class="imgBox">
+                <h2 id="productH">The VI</h2>
+                <img id="productImg" src="/img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg" alt="The wristwatch">
+                <div id="colorButtons" style="transform: rotate(0deg);">
+                    <div id="blackB" onclick="toggleBlack(desktopsize)" style="box-shadow: 0 0 0 black;"></div>
+                        
+                    <div id="whiteB" onclick="toggleWhite(desktopsize)" style="box-shadow: 0 0 0px 3px black;"></div>
+
+                    <div id="blueB" onclick="toggleBlue(desktopsize)" style="box-shadow: 0 0 0 black;"></div>
+
+                    <div id="redB" onclick="toggleRed(desktopsize)" style="box-shadow: 0 0 0 black;"></div>
+
+                    
+
                 </div>
-            </section>
+                <button class="addtocartMobile">Add to Cart <img id="addtocartImg" src="./img/shopping_cart.svg" alt="add to cart icon"></button>
+            </div>
+            <div class="similarImgs">
+                <h4>Similar Items</h4>
+                <a href="#"><img src="./img/haziq-jb-71_GA1KBf_8-unsplash_purple.jpg" alt="Other wristwatch"></a>
+                <a href="#"><img src="./img/haziq-jb-71_GA1KBf_8-unsplash_marine.jpg" alt="Other wristwatch"></a>
+                <a href="#"><img src="./img/haziq-jb-71_GA1KBf_8-unsplash_emerald.jpg" alt="Other wristwatch"></a>
+            </div>
 
 
         </main>

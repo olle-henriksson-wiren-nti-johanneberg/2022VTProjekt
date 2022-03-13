@@ -332,17 +332,19 @@ footer a:hover {
     height: 30%;
 }
 
+/* THe VI / PRODUCTS*/
 
 #mainProduct {
-    display: flex;
+    grid-template-rows: 1fr 0fr;
+    display: grid;
+    grid-template-areas: 
+    'imgb'
+    'prodp'
+    'simi';
 }
-.sect1Product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
+
 .imgBox {
+    grid-area: imgb;
     align-items: center;
     display: flex;
     flex-direction:column;
@@ -363,7 +365,7 @@ footer a:hover {
     align-items: center;
     background-color: rgba(128, 128, 128, 0.308);
     border-radius: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 #blackB, #blueB, #whiteB, #redB {
     border-radius: 100%;
@@ -384,16 +386,36 @@ footer a:hover {
 #blueB {
     border: 0.7em outset blue;
 }
-.productP {
+.productP { /* Hela beskrviningen till produkten */
     grid-area: prodp;
     display: flex;
     justify-content: center;
     background-color: #585859;
     width: 100%;
-    height: 40vh;
+    min-height: 30vh;
 
 }
-#productText hr {
+.addtocartMobile {
+    margin-bottom: 1em;
+    background-color: orange;
+    border-radius: 1em;
+    width: 10em;
+    text-align: center;
+    align-items: center;
+    height: 5em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.addtocartDesktop {
+    z-index: -5;
+    position: absolute;
+    visibility: hidden;
+}
+#addtocartImg {
+    width: 1.5em;
+}
+#productText hr { /* Lines mellan texten i beskrivningen av producken*/
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     background-color: black;
@@ -401,7 +423,7 @@ footer a:hover {
     width: 100%;
     height: 1px;
 }
-#productText {
+#productText { /* Textboxen till texten i besk.*/
     padding-top: 1em;
     color: white;
     width: 70vw;
@@ -415,6 +437,23 @@ footer a:hover {
 }
 #productText p {
     font-size: 1em;
+}
+.similarImgs { /* Boxen till "similarimgs" */
+    grid-area: simi;
+    width: 100%;
+    background-color: #585859;
+    text-align: center;
+    
+    color: white;
+}
+.similarImgs h4 {
+    padding-bottom: 1em;
+    font-size: 1em; 
+}
+.similarImgs img {
+    width: 55vw;
+    padding-bottom: 1em;
+    transition: width 0.5s ease;
 }
 /* ////////////////////////////
 
@@ -520,12 +559,11 @@ footer a:hover {
 
 
     /* Produkt sida (The VI) */
-    .sect1Product {
+    #mainProduct {
         display: flex;
         flex-direction: row;
         align-items: unset; 
         justify-content: space-between;
-        column-gap: 6em;
         width: 100%;
         height: auto;
 
@@ -565,7 +603,7 @@ footer a:hover {
         transition: all ease 1s;
         flex-direction: column;
         align-self: center;
-        padding-right: 20em;
+        padding-right: 18em;
         background-color: #0d0d0d00;
     }
     .imgBox {
@@ -589,6 +627,48 @@ footer a:hover {
     #redB {
         margin-left: 4em;
         border: 1em outset red;
+    }
+    .addtocartMobile { /* För att gömma add to cart knappen */
+        position: absolute;
+        z-index: -3;
+        visibility: hidden;
+    }
+    .addtocartDesktop {
+        margin-top: 4em;
+        margin-bottom: 1em;
+        background-color: orange;
+        border-radius: 1em;
+        height: 5em;
+        width: 10em;
+        text-align: center;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 1em;
+        border: none;
+        cursor: pointer;
+    }
+    .addtocartDesktop img {
+        width: 3em;
+    }
+    .similarImgs {
+        margin-left: 11em;
+        width: 25%;
+        background-color: #585859;
+        text-align: center;
+        padding-top: 1em;
+        color: white;
+    }
+    .similarImgs h4 {
+        padding-bottom: 1em;
+        font-size: 1em; 
+    }
+    .similarImgs img {
+        width: 15vw;
+        padding-bottom: 1em;
+        transition: width 0.5s ease;
+    }
+    .similarImgs img:hover {
+        width: 18vw;
     }
 }
 
