@@ -634,6 +634,9 @@ footer a:hover {
         visibility: hidden;
     }
     .addtocartDesktop {
+        z-index: 0;
+        position:unset;
+        visibility:visible;
         margin-top: 4em;
         margin-bottom: 1em;
         background-color: orange;
