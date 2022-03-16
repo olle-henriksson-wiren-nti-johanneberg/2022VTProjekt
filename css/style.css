@@ -486,6 +486,14 @@ footer a:hover {
     background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg);
     background-size: cover;
 }
+#productlistItemLight {
+    background-image: url(../img/lightscape-YBR08SwBp24-unsplash.jpg);
+    background-size: cover;
+}
+#productlistItemLogan {
+    background-image: url(../img/logan-weaver-jM_xJyX-sPI-unsplash.jpg);
+    background-size: cover;
+}
 .productlistContent h2 {
     font-size: 1em;
 }
@@ -496,7 +504,14 @@ footer a:hover {
     border-radius: 0.5em;
     background-color: #BFBFBF;
 }
-
+.listitemOnsale { /* Gamla priset */
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
+.listitemCheaptext { /* Det nya priset */
+    color: darkred;
+    font-weight: bold;
+}
 /* ////////////////////////////
 
 
