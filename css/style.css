@@ -512,7 +512,12 @@ footer a:hover {
     color: darkred;
     font-weight: bold;
 }
+
 /* ////////////////////////////
+
+
+
+
 
 
 ////////MEDIA QUERIES///// */
@@ -728,5 +733,47 @@ footer a:hover {
     .similarImgs img:hover {
         width: 18vw;
     }
+    #mainList {
+        margin-top: 1em;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .productlistImg {
+        width: 30vw;
+        height: 40vh;
+        transition: transform ease 0.5s;
+    }   
+    .productlistImg:hover {
+        transform: scale(1.1);
+    }
+    .listitemTag {
+        text-transform:uppercase;
+    }
+    #productlistItemSchnible {
+        background-position: 0 0;
+    }
+    #productlistItemVI {
+        background-position: 0 -8em;
+    }
+    #productlistItemLight {
+        background-position: 0 -5em;
+    }
+    #productlistItemLogan { /* Logan weaver bild */
+        background-position: 0  -12em;
+    }
+
+    .watchlistBreaker {
+        filter: drop-shadow(0 0 0.75rem black);
+        margin-bottom: 2em;
+        margin-top: 2em;
+        width: 100%;
+        height: 20vh;
+        background-image: url(../img/low-poly-grid-haikei-2.svg);
+
+    }
 }
+
 
