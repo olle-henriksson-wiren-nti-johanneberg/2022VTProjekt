@@ -512,7 +512,50 @@ footer a:hover {
     color: darkred;
     font-weight: bold;
 }
+#mainCart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainimgContent {
+    margin-top: 1em;
+    min-height: 40vh;
+    width: 80%;
+    padding: 2em; 
+    border-radius: 1em;
+    background-color: #BFBFBF;
+}
+.cartImg {
+    height: 30vh;
+    width: 80vw;
+    background-size: cover;
+    background-color: gray;
+    background-image: url(../img/haziq-jb-71_GA1KBf_8-unsplash_purple.jpg);
 
+}
+.cartHorizontalcontent {
+    margin-top: 1em;
+    padding-top: 0.33em;
+    padding-bottom: 0.33em;
+    border-radius: 0.33em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #bfbfbf;
+}
+.cartremoveItem {
+    width: 2em;
+}
+.cartremoveItembox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 122, 122);
+    width: 3em;
+    height: 3em;
+    border-radius: 0.33em;
+}
 /* ////////////////////////////
 
 

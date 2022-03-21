@@ -40,7 +40,7 @@ const productimage = document.querySelector('.productImg')
 var desktopsize = window.matchMedia("(min-width: 480px)")
 
 function toggleBlack(desktopsize) {
-    if (window.matchMedia("(min-width: 480px").matches) {
+    if (window.matchMedia("(min-width: 480px)").matches) {
 
     document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg"
 
