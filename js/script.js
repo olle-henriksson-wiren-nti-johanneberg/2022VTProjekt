@@ -204,3 +204,8 @@ function toggleRed(desktopsize) {
 // funkar
 }
 
+
+
+function colorPicker() {
+    document.getElementById("colorpickerDropdown").classList.toggle("show")
+}
