@@ -40,7 +40,7 @@ const productimage = document.querySelector('.productImg')
 var desktopsize = window.matchMedia("(min-width: 480px)")
 
 function toggleBlack(desktopsize) {
-    if (window.matchMedia("(min-width: 480px)").matches) {
+    if (window.matchMedia("(min-width: 480px)").matches) { /* Dator */
 
     document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg"
 
@@ -59,7 +59,7 @@ function toggleBlack(desktopsize) {
     document.getElementById("redB").style.transform = "rotate(0deg)"
     document.getElementById("whiteB").style.transform = "rotate(0deg)"
 
-    } else {
+    } else { /* Mobil */
     document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg"
 
     document.getElementById("blackB").style.boxShadow = "0 0 0 3px white"    

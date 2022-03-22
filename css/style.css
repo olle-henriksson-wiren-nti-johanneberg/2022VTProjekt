@@ -518,12 +518,16 @@ footer a:hover {
     align-items: center;
 }
 .mainimgContent {
+
+    border-radius: 1em; 
+}
+.cartimgBox {
+    background-color: #BFBFBF;    
     margin-top: 1em;
     min-height: 40vh;
-    width: 80%;
-    padding: 2em; 
+    width: 100%;
+    padding: 1em;
     border-radius: 1em;
-    background-color: #BFBFBF;
 }
 .cartImg {
     height: 30vh;
@@ -533,8 +537,16 @@ footer a:hover {
     background-image: url(../img/haziq-jb-71_GA1KBf_8-unsplash_purple.jpg);
 
 }
+.cartcontentBox {
+    background-color: #585859;
+    width: 100vw;
+    min-height: 40vh;
+    
+}
 .cartHorizontalcontent {
     margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
     padding-top: 0.33em;
     padding-bottom: 0.33em;
     border-radius: 0.33em;
@@ -783,7 +795,7 @@ footer a:hover {
         visibility:visible;
         margin-top: 4em;
         margin-bottom: 1em;
-        background-color: orange;
+        background: linear-gradient(130deg, #ffa500, #fd4bff 51%, var(--c1, #ffa500)) var(--gradientSkew, 0)/ 200%;       
         border-radius: 1em;
         height: 5em;
         width: 10em;
@@ -794,6 +806,12 @@ footer a:hover {
         border: none;
         cursor: pointer;
         color: black;
+        opacity: 1;
+        transition: all 1s;
+    }
+    .addtocartDesktop:hover {
+       
+        --gradientSkew: 100%
     }
     .similarImgs {
         margin-left: 11em;
