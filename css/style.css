@@ -795,7 +795,10 @@ footer a:hover {
         visibility:visible;
         margin-top: 4em;
         margin-bottom: 1em;
-        background: linear-gradient(130deg, #ffa500, #fd4bff 51%, var(--c1, #ffa500)) var(--gradientSkew, 0)/ 200%;       
+        background: rgb(215,56,244);
+        background: linear-gradient(280deg, rgba(215,56,244,1) 0%, rgba(255,165,0,1) 51%, rgba(255,0,0,1) 100%);   
+        background-position: right; 
+        background-size: 200%;
         border-radius: 1em;
         height: 5em;
         width: 10em;
@@ -811,7 +814,7 @@ footer a:hover {
     }
     .addtocartDesktop:hover {
        
-        --gradientSkew: 100%
+        background-position: left;
     }
     .similarImgs {
         margin-left: 11em;
