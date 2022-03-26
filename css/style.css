@@ -512,32 +512,37 @@ footer a:hover {
     color: darkred;
     font-weight: bold;
 }
-
-#mainCart {
+ /*//////////////// Delsida 3 börjar här ////////////////////////////////
+ 
+                                :)  This food tasty
+                                Hej Mattias!
+ 
+ ////////////////////////////////////////////////////////////////////////*/
+#mainCart { /* Hela Main */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.cartimgBox {
+.cartimgBox { /* Hela boxen av card*/
     background-color: #ffffff;    
     margin-top: 1em;
-    min-height: 40vh;
-    width: 100%;
+    height: 62vh;
+    width: 90vw;
     border-radius: 1em;
     filter: drop-shadow(0 0 0.3em black);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 }
-.cartnamePrice {
+.cartnamePrice { /* Pris och Nametag boxen */
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
 }
-.cartImg {
+.cartImg { /* Bilden i "Cart" */
     height: 30vh;
-    width: 95vw;
+    width: 90vw;
     background-size: cover;
     background-color: gray;
     background-image: url(../img/haziq-jb-71_GA1KBf_8-unsplash_purple.jpg);
@@ -545,24 +550,11 @@ footer a:hover {
     border-top-right-radius: 1em;
 
 }
-.cartcontentBox {
+.cartDescription {
     background-color: #585859;
     width: 100vw;
     min-height: 40vh;
     
-}
-.cartHorizontalcontent {
-    margin-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.33em;
-    padding-bottom: 0.33em;
-    border-radius: 0.33em;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #bfbfbf;
 }
 .cartremoveItem {
     width: 2em;
@@ -575,11 +567,21 @@ footer a:hover {
     width: 3em;
     height: 3em;
     border-radius: 0.33em;
+
+}
+.cartremoveitemColor {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95vw;
+    height: 4em;
 }
 .cartcolorPicker {
     text-align: center;
     background-color: white;
     width: 3em;
+    height: 2em;
     color: black;
     font-size: 1em;
     text-decoration: none;
@@ -606,13 +608,16 @@ footer a:hover {
     background-color: #f1f1f1;
     min-width: 160px;
     overflow:auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: -1;
+    bottom: 0;
+    right: 0;
 }
 .show {
     z-index: 1;
     display: block;
     background-color: white;
+    filter: drop-shadow(0 0 0.3em black);
+
 }
 
 /* ////////////////////////////
