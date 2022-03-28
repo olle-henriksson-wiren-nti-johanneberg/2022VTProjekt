@@ -526,12 +526,13 @@ footer a:hover {
 .cartimgBox { /* Hela boxen av card*/
     background-color: #ffffff;    
     margin-top: 1em;
-    height: 62vh;
+    height: 50vh;
     width: 90vw;
     border-radius: 1em;
     filter: drop-shadow(0 0 0.3em black);
     display: flex;
     flex-direction: column;
+    margin-bottom: 2em;
     
 }
 .cartnamePrice { /* Pris och Nametag boxen */
@@ -550,12 +551,7 @@ footer a:hover {
     border-top-right-radius: 1em;
 
 }
-.cartDescription {
-    background-color: #585859;
-    width: 100vw;
-    min-height: 40vh;
-    
-}
+
 .cartremoveItem {
     width: 2em;
 }
@@ -572,7 +568,7 @@ footer a:hover {
 .cartremoveitemColor {
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     width: 95vw;
     height: 4em;
@@ -608,9 +604,10 @@ footer a:hover {
     background-color: #f1f1f1;
     min-width: 160px;
     overflow:auto;
-    z-index: -1;
-    bottom: 0;
+    z-index: -3;
     right: 0;
+    bottom: 160px;
+    filter: none;
 }
 .show {
     z-index: 1;
@@ -619,7 +616,77 @@ footer a:hover {
     filter: drop-shadow(0 0 0.3em black);
 
 }
+.boxBreak { /* The Box */
+    color: #585859;
+    fill: #585859;
+    background-color: #585859;
+}
+.boxbreakSkew {
+    fill: #585859;
+    color: #585859;
+    transform-origin: bottom left;
+    transform: skewX(-30deg);
+}
+.boxbreakBox { /* The box of the box*/
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    
+}
+.cartDescription {
+    display: flex;
+    flex-direction: column;
+    background-color: #585859;
+    width: 100vw;
+    padding: 1em;
+    min-height: 40vh;
+    
+}
+.cartDescription h2 {
+    font-size: 1em;
+    color: white;
+}
+.couponBox {
+    display: flex;
+    margin-bottom: 1em;
+    flex-direction: row;
 
+}
+.couponsearchBar {
+    background-color: white;
+    height: 4em;
+    width: 10em;
+    margin-right: 1em;
+    padding-top: 8px;
+    resize: none;
+    padding-left: 5px;
+    align-items: center;
+}
+.couponButton {
+    width: 8em;
+    height: 4em;
+    border: none;
+    padding: none;
+    color: black;
+    background-color: #BFBFBF;
+    border-radius: 0.33em;
+    transition: all 0.3s;
+}
+.couponButton:hover {
+    background-color: #F2F2F2;
+}
+.checkoutButton {
+    color: black;
+    background-color: #BFBFBF;
+    border-radius: 0.33em;
+    transition: all 0.3s;
+    border: none;
+    width: 6em;
+    height: 3em;
+}
+.checkoutButton:hover {
+    background-color: white;
+}
 /* ////////////////////////////
 
 
