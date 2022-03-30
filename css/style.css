@@ -1,4 +1,13 @@
 /* Denna fil skall innehålla din CSS kod */
+:root { /* Färgvariabler */
+    --white: #F2F2F2;
+    --lightWhite: #BFBFBF;
+    --lightGray: #89888C;
+    --darkGray: #585859;
+    --black: #0D0D0D;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -89,7 +98,7 @@
 @keyframes imageCycle { /* Image cycle for The Vi watch */
     0% {
         background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg);
-        border-bottom: 0.5em solid #0d0d0d;
+        border-bottom: 0.5em solid var(--black);
     }
 
     25% {
@@ -142,7 +151,7 @@
     grid-template-columns: auto;
 }
 nav {
-    background-color: #0D0D0D;
+    background-color: var(--black);
     color: white;
     position: fixed;
     top: 0;
@@ -239,7 +248,7 @@ main {
     width: 70vw;
     height: 20vh;
     background-image: url(../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg);
-    border-bottom: 7px solid #0d0d0d;
+    border-bottom: 7px solid var(--black);
     border-radius: 0px 40px 0px 40px;
     background-size: cover;
     background-position-y: -5em;
@@ -502,7 +511,7 @@ footer a:hover {
     width: 5em;
     text-align: center;
     border-radius: 0.5em;
-    background-color: #BFBFBF;
+    background-color: var(--lightWhite);
 }
 .listitemOnsale { /* Gamla priset */
     text-decoration: line-through;
@@ -678,12 +687,12 @@ footer a:hover {
     border: none;
     padding: none;
     color: black;
-    background-color: #BFBFBF;
+    background-color: var(--lightWhite);
     border-radius: 0.33em;
     transition: all 0.3s;
 }
 .couponButton:hover {
-    background-color: #F2F2F2;
+    background-color: var();
 }
 .checkoutButton {
     color: black;
@@ -732,7 +741,7 @@ footer a:hover {
     }
     nav {
         align-items: center;
-        outline: #0D0D0D solid;
+        outline: var(--black) solid;
     }
     .navLinks {
         flex-direction: row;
@@ -853,7 +862,7 @@ footer a:hover {
         flex-direction: column;
         align-self: center;
         padding-right: 18em;
-        background-color: #0d0d0d00;
+        background-color: var(--black);
     }
     .imgBox {
         display: flex;
@@ -862,7 +871,7 @@ footer a:hover {
     }
     #blackB {
         margin-left: 4em;
-        border: 1em outset #585859;
+        border: 1em outset var(--darkGray);
     }
     #whiteB {
         margin-left: 10em;
@@ -912,7 +921,7 @@ footer a:hover {
     .similarImgs {
         margin-left: 11em;
         width: 25%;
-        background-color: #585859;
+        background-color: var(--darkGray);
         text-align: center;
         padding-top: 1em;
         color: white;
@@ -1001,7 +1010,7 @@ footer a:hover {
         cursor: pointer;
     }
     .cartremoveItembox:hover {
-        background-color: #585859;
+        background-color: var(--darkGray);
     }
     .cartremoveitemColor {
         justify-content: flex-end;
