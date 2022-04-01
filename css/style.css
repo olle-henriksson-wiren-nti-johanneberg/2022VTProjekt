@@ -163,7 +163,7 @@ nav {
     flex-direction: row;
     grid-area: nv;
     justify-content:space-evenly;
-    
+    outline: var(--black) solid 8px;
 }
 #shopping_cart {/* img av shopping cart */
     width: 8vw;
@@ -862,7 +862,7 @@ footer a:hover {
         flex-direction: column;
         align-self: center;
         padding-right: 18em;
-        background-color: var(--black);
+        background-color: transparent;
     }
     .imgBox {
         display: flex;
