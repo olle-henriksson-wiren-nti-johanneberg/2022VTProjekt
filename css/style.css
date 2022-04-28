@@ -263,12 +263,13 @@ main {
 }
 .previewCycle2 {
     background-color: gray;
-    width: 90vw;
+    width: 70vw;
     height: 15vh;
     background-image: url(../img/haziq-jb-71_GA1KBf_8-unsplash_marine.jpg);
     background-size: cover;
     background-position-y: -3em;
-    border-radius: 15px 0px 0px 0px;
+    border-radius: 15px 0px 15px 0px;
+    border-bottom: rgb(55, 36, 194) 10px solid;
     animation-name: imageCycle2;
     animation-duration: 10s;
     animation-iteration-count: infinite;
