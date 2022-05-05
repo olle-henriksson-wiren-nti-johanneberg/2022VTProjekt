@@ -794,10 +794,9 @@ footer a:hover {
     #art2_3Hem {
         display: grid;
         grid-template-areas: 
-        'ecoh ecoh'
-        'ecof ecop'
+        'ecof ecoh'
         'ecof ecop';
-        column-gap: 10em;
+        column-gap: 2em;
     }
     #ecoFriendly { /* Bilden */
         grid-area: ecof;
@@ -809,11 +808,13 @@ footer a:hover {
         padding: 1em;
         border-radius: 1em;
         grid-area: ecop;
-        text-align: right;
+        text-align: left;
         background-color: #bfbfbf40;
     }
     #ecoH {
         grid-area: ecoh;
+        text-align: left;
+        margin-top: 10em;
     }
 
 
