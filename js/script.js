@@ -203,9 +203,16 @@ function toggleRed(desktopsize) {
 
 // funkar
 }
-
-
-
 function colorPicker() {
     document.getElementById("colorpickerDropdown").classList.toggle("show")
 }
+
+window.onscroll = function() {navScroll()};
+function navScroll() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.querySelector("nav").style.padding = "30px 10px";
+    } else {
+        document.querySelector("nav").style.padding = "50px 10px";
+    }
+}
+navScroll()
