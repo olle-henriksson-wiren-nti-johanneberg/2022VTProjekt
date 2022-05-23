@@ -750,11 +750,16 @@ footer a:hover {
     .navLinks {
         flex-direction: row;
         position:static;
+        height: 0vh;
         padding-bottom: 24px;
         background-color: transparent;
         align-items: center;
         justify-content: space-between;
 
+    }
+    .burger div {
+        visibility: hidden;
+        z-index: -10;
     }
     .navLinks li {
         padding-right: 2em;
