@@ -66,7 +66,7 @@ function toggleBlack(desktopsize) {
     document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_black.jpg"
 
     document.getElementById("blackB").style.boxShadow = "0 0 0 3px white"    
-    document.getElementById("blackB").style.border = "1.5em outset #585859"
+    document.getElementById("blackB").style.border = "1em outset #585859"
     document.getElementById("whiteB").style.boxShadow = "none"
     document.getElementById("redB").style.boxShadow = "none"
     document.getElementById("blueB").style.boxShadow = "none"
@@ -107,7 +107,7 @@ function toggleWhite(desktopsize) {
     document.getElementById("productImg").src ="../img/rick-muigo-SX9IouL_qOg-unsplash_white.jpg"
 
     document.getElementById("whiteB").style.boxShadow = "0 0 0 3px black"    
-    document.getElementById("whiteB").style.border = "1.5em outset white"
+    document.getElementById("whiteB").style.border = "1em outset white"
     document.getElementById("blackB").style.boxShadow = "none"
     document.getElementById("redB").style.boxShadow = "none"
     document.getElementById("blueB").style.boxShadow = "none"
@@ -130,7 +130,7 @@ function toggleBlue(desktopsize) { //för 480px och över, alltså desktop
     document.getElementById("productImg").src ="../img/rick-muigo-SX9IouL_qOg-unsplash_blue.jpg"
 
     document.getElementById("blueB").style.boxShadow = "0 0 0 5px black"
-    document.getElementById("blueB").style.border = "1.5em outset blue"
+    document.getElementById("blueB").style.border = "1em outset blue"
     document.getElementById("whiteB").style.boxShadow = "none"
     document.getElementById("redB").style.boxShadow = "none"
     document.getElementById("blackB").style.boxShadow = "none"
@@ -148,7 +148,7 @@ function toggleBlue(desktopsize) { //för 480px och över, alltså desktop
     document.getElementById("productImg").src ="../img/rick-muigo-SX9IouL_qOg-unsplash_blue.jpg"
 
     document.getElementById("blueB").style.boxShadow = "0 0 0 3px white"
-    document.getElementById("blueB").style.border = "1.5em outset blue"
+    document.getElementById("blueB").style.border = "1em outset blue"
     document.getElementById("whiteB").style.boxShadow = "none"
     document.getElementById("redB").style.boxShadow = "none"
     document.getElementById("blackB").style.boxShadow = "none"
@@ -171,7 +171,7 @@ function toggleRed(desktopsize) {
     document.getElementById("productImg").src = "../img/rick-muigo-SX9IouL_qOg-unsplash_red.jpg"
 
     document.getElementById("redB").style.boxShadow = "0 0 0 5px black"
-    document.getElementById("redB").style.border = "1.5em outset red"
+    document.getElementById("redB").style.border = "1em outset red"
     document.getElementById("whiteB").style.boxShadow = "none"
     document.getElementById("blackB").style.boxShadow = "none"
     document.getElementById("blueB").style.boxShadow = "none"
